@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Iplayer } from './shared/module/model';
-import { teams } from './shared/const/const';
+import { cricket } from './shared/const/players';
+import { iPlayer } from './shared/module/players';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { teams } from './shared/const/const';
 export class AppComponent {
   title = 'pipe';
   search !: string;
-  playersArray: Array<Iplayer> = teams;
+  playersArray: Array<iPlayer> = cricket;
 
 
   changeClick(eve: Event) {

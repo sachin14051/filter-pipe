@@ -1,12 +1,6 @@
 <h1 class="bg-info text-white p-3">filter pipe</h1>
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <select class="form-control" (change)="changeClick($event)">
-        <option value="searchByName">searchByName</option>
-        <option value="searchByTeam">searchByTeam</option>
-     </select>
-    </div>
     <div class="col-md-12  mt-3 ">
       <input type="text" placeholder="find" [(ngModel)]="search" class="form-control">
     </div>
@@ -17,7 +11,8 @@
             <th>sr no</th>
             <th>full name</th>
             <th>team</th>
-            <th>runs</th>
+            <th>odi runs</th>
+            <th>test runs</th>
           </tr>
         </thead>
         <tbody>
@@ -25,7 +20,8 @@
             <td>{{i+1}}</td>
             <td>{{s.name}}</td>
             <td>{{s.team }}</td>
-            <td>{{s.runs}}</td>
+            <td>{{s.test_runs}}</td>
+            <td>{{s.odi_runs}}</td>
           </tr>
         </tbody>
       </table>

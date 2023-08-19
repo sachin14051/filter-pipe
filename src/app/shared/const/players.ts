@@ -1,6 +1,6 @@
 import { iPlayer } from "../module/players";
 
-export const teams : iPlayer[]= [
+export const cricket : iPlayer[]= [
     {
       "name": "Sachin Tendulkar",
       "team": "India",

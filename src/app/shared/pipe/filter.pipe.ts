@@ -1,12 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Iplayer } from '../module/model';
+import { iPlayer } from '../module/players';
 
 @Pipe({
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(value: Array<Iplayer>, searchstring: string): Iplayer[] {
+  transform(value: Array<iPlayer>, searchstring: string): iPlayer[] {
     if (!value) {
       return []
     }
